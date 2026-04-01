@@ -1,0 +1,8 @@
+Kurigram==2.2.35
+motor
+aiohttp
+qbittorrent-api
+python-dotenv
+tgcrypto
+hachoir
+aiofiles
