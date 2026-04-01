@@ -85,7 +85,7 @@ class DownloadManager:
         self.aria2 = Aria2Downloader()
         self.qbit = QbitDownloader()
 
-    async def download(self, link, message, edit_interval=5):
+    async def download(self, link, message, edit_interval=10):
         is_torrent = link.endswith('.torrent') or link.startswith('magnet:')
         download_dir = os.path.join(Config.DOWNLOAD_DIR, str(time.time()).replace('.', ''))
         os.makedirs(download_dir, exist_ok=True)
