@@ -23,4 +23,4 @@ RUN chmod +x start.sh
 # Expose port for Koyeb healthcheck
 EXPOSE 8000
 
-CMD ["./start.sh"]
+CMD ["bash", "start.sh"]
